@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Nameless</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="card">
+    <div class="navbar">
+        <button onclick="navigate('home')">HOME</button>
+        <button onclick="navigate('friends')">FRIENDS</button>
+        <button onclick="navigate('video')">VIDEO</button>
+        <button onclick="navigate('gallery')">GALLERY</button>
+    </div>
+    <div id="home" class="tab active">
+        <div class="profile">
+            <img src="https://xatimg.com/image/AJeWgMofUhsz.jpg" alt="Profile" class="profile-pic-large" />
+            <h2 class="modern-text">Nameless</h2>
+            <p class="modern-text">Location</p>
+            <blockquote class="modern-text">Info</blockquote>
+            <a href="https://xat.me/Akiiimitsu" class="relation-btn">RELATION</a>
+        </div>
+    </div>
+    <div id="friends" class="tab">
+        <h2 class="modern-text">FRIENDS</h2>
+        <div class="friends-list">
+            <a href="https://xat.me/Akiiimitsu"><img src="https://xatimg.com/image/AJeWgMofUhsz.jpg" alt="Friend"><p>Nameless</p></a>
+            <a href="https://xat.me/Akiiimitsu"><img src="https://xatimg.com/image/AJeWgMofUhsz.jpg" alt="Friend"><p>Nameless</p></a>
+            <a href="https://xat.me/Akiiimitsu"><img src="https://xatimg.com/image/AJeWgMofUhsz.jpg" alt="Friend"><p>Nameless</p></a>
+            <a href="https://xat.me/Akiiimitsu"><img src="https://xatimg.com/image/AJeWgMofUhsz.jpg" alt="Friend"><p>Nameless</p></a>
+            <a href="https://xat.me/Akiiimitsu"><img src="https://xatimg.com/image/AJeWgMofUhsz.jpg" alt="Friend"><p>Nameless</p></a>
+        </div>
+    </div>
+    <div id="video" class="tab">
+        <h2 class="modern-text">VIDEO</h2>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/6Fv-wbsIA2s" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="gallery" class="tab">
+        <h2 class="modern-text">PHOTOS</h2>
+        <div class="gallery">
+            <img src="https://xatimg.com/image/AJeWgMofUhsz.jpg" onclick="openLightbox(this.src)" />
+            <img src="https://xatimg.com/image/AJeWgMofUhsz.jpg" onclick="openLightbox(this.src)" />
+            <img src="https://xatimg.com/image/AJeWgMofUhsz.jpg" onclick="openLightbox(this.src)" />
+          <img src="https://xatimg.com/image/AJeWgMofUhsz.jpg" onclick="openLightbox(this.src)" />
+        </div>
+    </div>
+</div>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="">
+    <button class="exit-btn" onclick="closeLightbox(event)">Exit</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
