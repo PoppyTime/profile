@@ -1,0 +1,109 @@
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    width: 800px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.navbar button {
+    background: #ff7f50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.tab {
+    display: none;
+}
+.tab.active {
+    display: block;
+}
+.profile {
+    text-align: center;
+}
+.profile-pic-large {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.modern-text {
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+.relation-btn {
+    background: crimson;
+    padding: 10px 20px;
+    color: white;
+    display: inline-block;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+.friends-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+.friends-list a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.friends-list img {
+    width: 100px;
+    border-radius: 10px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.gallery img {
+    width: 150px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+.lightbox .exit-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
